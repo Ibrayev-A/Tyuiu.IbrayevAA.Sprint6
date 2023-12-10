@@ -30,10 +30,10 @@ namespace Tyuiu.IbrayevAA.Sprint6.Task4.V20
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.groupBoxInput_IAA = new System.Windows.Forms.GroupBox();
             this.groupBoxOutput_IAA = new System.Windows.Forms.GroupBox();
             this.textBoxStartValue_IAA = new System.Windows.Forms.TextBox();
@@ -51,6 +51,7 @@ namespace Tyuiu.IbrayevAA.Sprint6.Task4.V20
             this.textBoxResult_IAA = new System.Windows.Forms.TextBox();
             this.chartOutput_IAA = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.splitterPanel_IAA = new System.Windows.Forms.Splitter();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBoxInput_IAA.SuspendLayout();
             this.groupBoxOutput_IAA.SuspendLayout();
             this.panelTop_IAA.SuspendLayout();
@@ -217,26 +218,26 @@ namespace Tyuiu.IbrayevAA.Sprint6.Task4.V20
             // 
             // chartOutput_IAA
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartOutput_IAA.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            this.chartOutput_IAA.ChartAreas.Add(chartArea2);
             this.chartOutput_IAA.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.chartOutput_IAA.Legends.Add(legend1);
+            legend2.Name = "Legend1";
+            this.chartOutput_IAA.Legends.Add(legend2);
             this.chartOutput_IAA.Location = new System.Drawing.Point(184, 0);
             this.chartOutput_IAA.Name = "chartOutput_IAA";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.IsVisibleInLegend = false;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartOutput_IAA.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.IsVisibleInLegend = false;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartOutput_IAA.Series.Add(series2);
             this.chartOutput_IAA.Size = new System.Drawing.Size(935, 337);
             this.chartOutput_IAA.TabIndex = 3;
             this.chartOutput_IAA.Text = "chart1";
-            title1.ForeColor = System.Drawing.Color.Blue;
-            title1.Name = "Title1";
-            title1.Text = "График функции";
-            this.chartOutput_IAA.Titles.Add(title1);
+            title2.ForeColor = System.Drawing.Color.Blue;
+            title2.Name = "Title1";
+            title2.Text = "График функции";
+            this.chartOutput_IAA.Titles.Add(title2);
             // 
             // splitterPanel_IAA
             // 
@@ -292,6 +293,7 @@ namespace Tyuiu.IbrayevAA.Sprint6.Task4.V20
         private System.Windows.Forms.DataVisualization.Charting.Chart chartOutput_IAA;
         private System.Windows.Forms.TextBox textBoxResult_IAA;
         private System.Windows.Forms.Splitter splitterPanel_IAA;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
