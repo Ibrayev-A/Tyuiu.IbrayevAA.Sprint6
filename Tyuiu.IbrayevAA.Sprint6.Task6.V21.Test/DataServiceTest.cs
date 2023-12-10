@@ -11,6 +11,20 @@ namespace Tyuiu.IbrayevAA.Sprint6.Task6.V21.Test
         [TestMethod]
         public void TestMethod1()
         {
+            string resStr = "gsfggsgg gdsgdsgg";
+            string line = "ff gsfggsgg gdsgdsgg ff";
+            string[] words = line.Split(' ');
+            string res = "";
+
+            foreach (string word in words)
+            {
+                if (word.Contains("g"))
+                {
+                    res += word + " ";
+                }
+            }
+            res = res.TrimEnd();
+            Assert.AreEqual(resStr, res);
         }
     }
 }
